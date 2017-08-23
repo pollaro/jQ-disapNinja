@@ -1,0 +1,21 @@
+*{
+    margin: 20px;
+    padding: 0px;
+}
+
+.row{
+    margin-left: 20px;
+}
+
+.ninja{
+    display: inline-block;
+    text-align: center;
+    width:300px;
+    margin:0px -2px;
+    padding: 0px;
+}
+
+img{
+    width: 280px;
+    height: auto;
+}

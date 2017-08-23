@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninja!</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+    <body>
+        <div class="row">
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+        </div>
+        <div class="row">
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+            <div class="ninja">
+                <img src="ninja.jpg" alt="Ninja Ninja!">
+            </div>
+        </div>
+        <button id="restore" type="button">RESTORE</button>
+        <script>
+            $(document).ready(function(){
+                $('.ninja img').click(function(){
+                    $(this).fadeOut();
+                });
+                $('#restore').click(function(){
+                    $('img').fadeIn('fast');
+                });
+            });
+        </script>
+    </body>
+</html>
